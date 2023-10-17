@@ -9,18 +9,6 @@ bin/
 
 .github/token.txt
 
-src/ontology/mirror
-src/ontology/mirror/*
-src/ontology/reports/*
-src/ontology/sbdbel.owl
-src/ontology/sbdbel.obo
-src/ontology/sbdbel.json
-src/ontology/sbdbel-base.*
-src/ontology/sbdbel-basic.*
-src/ontology/sbdbel-full.*
-src/ontology/sbdbel-simple.*
-src/ontology/sbdbel-simple-non-classified.*
-
 src/ontology/seed.txt
 src/ontology/dosdp-tools.log
 src/ontology/ed_definitions_merged.owl
