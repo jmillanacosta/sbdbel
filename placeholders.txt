@@ -1,0 +1,12 @@
+https://www.sbd4nano.eu/bel/#CausalAssertion
+https://www.sbd4nano.eu/bel/#negativelyCorreclates
+https://www.sbd4nano.eu/bel/#correlates
+https://www.sbd4nano.eu/bel/#negativelyCorrelates
+https://www.sbd4nano.eu/bel/#changes
+https://www.sbd4nano.eu/bel/#positivelyCorrelates
+https://www.sbd4nano.eu/bel/#kindOf
+https://www.sbd4nano.eu/bel/#recognizedBy
+https://www.sbd4nano.eu/bel/#partOf
+https://www.sbd4nano.eu/bel/#AdverseOutcome
+https://www.sbd4nano.eu/bel/#KeyEvent
+
