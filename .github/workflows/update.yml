@@ -14,7 +14,7 @@ jobs:
     - name: Check out repository
       uses: actions/checkout@v4
     - name: Update sbdbel according to mapping rules
-      run: bash src/scripts/extract_relations.sh
+      run: bash src/scripts/extract_relations_bel.sh
   # Commit and push
     - name: Commit files
       if: always()
