@@ -1,0 +1,998 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="urn:absolute:www.jmillanacosta.com/sbdbel/src/ontology/sbdbel.ttl#"
+     xml:base="urn:absolute:www.jmillanacosta.com/sbdbel/src/ontology/sbdbel.ttl"
+     xmlns:dc="http://purl.org/dc/terms/"
+     xmlns:ql="http://semweb.mmlab.be/ns/ql#"
+     xmlns:rr="http://www.w3.org/ns/r2rml#"
+     xmlns:fno="https://w3id.org/function/ontology#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:rml="http://semweb.mmlab.be/ns/rml#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:d2rq="http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#"
+     xmlns:fnml="http://semweb.mmlab.be/ns/fnml#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:void="http://rdfs.org/ns/void#"
+     xmlns:sbdbel="https://www.jmillanacosta.com/sbdbel#">
+    <owl:Ontology rdf:about="urn:absolute:www.jmillanacosta.com/sbdbel/src/ontology/sbdbel.ttl">
+        <owl:versionIRI rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+        <dc:contributor rdf:nodeID="genid1"/>
+        <dc:description>SBDBEL provides classes and properties used to model the biological relationships relevant to safe by design assessments.</dc:description>
+        <dc:description>This is the core version of sbdbel, an ontology with the classes and properties used to model the biological relationships relevant to safe by design assessments.</dc:description>
+        <dc:title>Safe by Design Biological Expression Language</dc:title>
+        <owl:versionInfo>0.1</owl:versionInfo>
+    </owl:Ontology>
+    <rdf:Description rdf:nodeID="genid1">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <foaf:holdsAccount rdf:resource="http://orcid.org/0000-0002-4166-7093"/>
+        <foaf:name>Javier Millan Acosta</foaf:name>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasDerivedFrom -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/holdsAccount -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/holdsAccount"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+    
+
+
+    <!-- https://www.jmillanacosta.com/sbdbel#hasCategory -->
+
+    <owl:AnnotationProperty rdf:about="https://www.jmillanacosta.com/sbdbel#hasCategory"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://www.jmillanacosta.com/sbdbel#analogous -->
+
+    <owl:ObjectProperty rdf:about="https://www.jmillanacosta.com/sbdbel#analogous">
+        <rdfs:label>analogous</rdfs:label>
+        <skos:altLabel>analogous</skos:altLabel>
+        <sbdbel:hasCategory>deprecated</sbdbel:hasCategory>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#analogous"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#analogous"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>analogous</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#analogous"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <owl:annotatedTarget>analogous</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#analogous"/>
+        <owl:annotatedProperty rdf:resource="https://www.jmillanacosta.com/sbdbel#hasCategory"/>
+        <owl:annotatedTarget>deprecated</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://www.jmillanacosta.com/sbdbel#association -->
+
+    <owl:ObjectProperty rdf:about="https://www.jmillanacosta.com/sbdbel#association">
+        <rdfs:label>association</rdfs:label>
+        <skos:altLabel>--</skos:altLabel>
+        <sbdbel:hasCategory>correlative</sbdbel:hasCategory>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#association"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>association</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#association"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <owl:annotatedTarget>--</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#association"/>
+        <owl:annotatedProperty rdf:resource="https://www.jmillanacosta.com/sbdbel#hasCategory"/>
+        <owl:annotatedTarget>correlative</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#association"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://www.jmillanacosta.com/sbdbel#biomarkerFor -->
+
+    <owl:ObjectProperty rdf:about="https://www.jmillanacosta.com/sbdbel#biomarkerFor">
+        <rdfs:label>biomarkerFor</rdfs:label>
+        <skos:altLabel>biomarkerFor</skos:altLabel>
+        <sbdbel:hasCategory>deprecated</sbdbel:hasCategory>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#biomarkerFor"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#biomarkerFor"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>biomarkerFor</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#biomarkerFor"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <owl:annotatedTarget>biomarkerFor</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#biomarkerFor"/>
+        <owl:annotatedProperty rdf:resource="https://www.jmillanacosta.com/sbdbel#hasCategory"/>
+        <owl:annotatedTarget>deprecated</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://www.jmillanacosta.com/sbdbel#causesNoChange -->
+
+    <owl:ObjectProperty rdf:about="https://www.jmillanacosta.com/sbdbel#causesNoChange">
+        <rdfs:label>causesNoChange</rdfs:label>
+        <skos:altLabel>cnc</skos:altLabel>
+        <sbdbel:hasCategory>causal</sbdbel:hasCategory>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#causesNoChange"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#causesNoChange"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>causesNoChange</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#causesNoChange"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <owl:annotatedTarget>cnc</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#causesNoChange"/>
+        <owl:annotatedProperty rdf:resource="https://www.jmillanacosta.com/sbdbel#hasCategory"/>
+        <owl:annotatedTarget>causal</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://www.jmillanacosta.com/sbdbel#decreases -->
+
+    <owl:ObjectProperty rdf:about="https://www.jmillanacosta.com/sbdbel#decreases">
+        <rdfs:label>decreases</rdfs:label>
+        <skos:altLabel>-|</skos:altLabel>
+        <sbdbel:hasCategory>causal</sbdbel:hasCategory>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#decreases"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#decreases"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>decreases</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#decreases"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <owl:annotatedTarget>-|</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#decreases"/>
+        <owl:annotatedProperty rdf:resource="https://www.jmillanacosta.com/sbdbel#hasCategory"/>
+        <owl:annotatedTarget>causal</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://www.jmillanacosta.com/sbdbel#directlyDecreases -->
+
+    <owl:ObjectProperty rdf:about="https://www.jmillanacosta.com/sbdbel#directlyDecreases">
+        <rdfs:label>directlyDecreases</rdfs:label>
+        <skos:altLabel>=|</skos:altLabel>
+        <sbdbel:hasCategory>causal</sbdbel:hasCategory>
+        <sbdbel:hasCategory>direct</sbdbel:hasCategory>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#directlyDecreases"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#directlyDecreases"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>directlyDecreases</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#directlyDecreases"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <owl:annotatedTarget>=|</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#directlyDecreases"/>
+        <owl:annotatedProperty rdf:resource="https://www.jmillanacosta.com/sbdbel#hasCategory"/>
+        <owl:annotatedTarget>causal</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#directlyDecreases"/>
+        <owl:annotatedProperty rdf:resource="https://www.jmillanacosta.com/sbdbel#hasCategory"/>
+        <owl:annotatedTarget>direct</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://www.jmillanacosta.com/sbdbel#directlyIncreases -->
+
+    <owl:ObjectProperty rdf:about="https://www.jmillanacosta.com/sbdbel#directlyIncreases">
+        <rdfs:label>directlyIncreases</rdfs:label>
+        <skos:altLabel>=&gt;</skos:altLabel>
+        <sbdbel:hasCategory>causal</sbdbel:hasCategory>
+        <sbdbel:hasCategory>direct</sbdbel:hasCategory>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#directlyIncreases"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#directlyIncreases"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>directlyIncreases</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#directlyIncreases"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <owl:annotatedTarget>=&gt;</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#directlyIncreases"/>
+        <owl:annotatedProperty rdf:resource="https://www.jmillanacosta.com/sbdbel#hasCategory"/>
+        <owl:annotatedTarget>causal</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#directlyIncreases"/>
+        <owl:annotatedProperty rdf:resource="https://www.jmillanacosta.com/sbdbel#hasCategory"/>
+        <owl:annotatedTarget>direct</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://www.jmillanacosta.com/sbdbel#equivalentTo -->
+
+    <owl:ObjectProperty rdf:about="https://www.jmillanacosta.com/sbdbel#equivalentTo">
+        <rdfs:label>equivalentTo</rdfs:label>
+        <skos:altLabel>eq</skos:altLabel>
+        <sbdbel:hasCategory>equivalence</sbdbel:hasCategory>
+        <sbdbel:hasCategory>membership</sbdbel:hasCategory>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#equivalentTo"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#equivalentTo"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>equivalentTo</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#equivalentTo"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <owl:annotatedTarget>eq</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#equivalentTo"/>
+        <owl:annotatedProperty rdf:resource="https://www.jmillanacosta.com/sbdbel#hasCategory"/>
+        <owl:annotatedTarget>equivalence</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#equivalentTo"/>
+        <owl:annotatedProperty rdf:resource="https://www.jmillanacosta.com/sbdbel#hasCategory"/>
+        <owl:annotatedTarget>membership</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://www.jmillanacosta.com/sbdbel#hasComponent -->
+
+    <owl:ObjectProperty rdf:about="https://www.jmillanacosta.com/sbdbel#hasComponent">
+        <rdfs:label>hasComponent</rdfs:label>
+        <skos:altLabel>hasComponent</skos:altLabel>
+        <sbdbel:hasCategory>computed</sbdbel:hasCategory>
+        <sbdbel:hasCategory>membership</sbdbel:hasCategory>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#hasComponent"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#hasComponent"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>hasComponent</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#hasComponent"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <owl:annotatedTarget>hasComponent</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#hasComponent"/>
+        <owl:annotatedProperty rdf:resource="https://www.jmillanacosta.com/sbdbel#hasCategory"/>
+        <owl:annotatedTarget>computed</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#hasComponent"/>
+        <owl:annotatedProperty rdf:resource="https://www.jmillanacosta.com/sbdbel#hasCategory"/>
+        <owl:annotatedTarget>membership</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://www.jmillanacosta.com/sbdbel#hasComponents -->
+
+    <owl:ObjectProperty rdf:about="https://www.jmillanacosta.com/sbdbel#hasComponents">
+        <rdfs:label>hasComponents</rdfs:label>
+        <skos:altLabel>hasComponents</skos:altLabel>
+        <sbdbel:hasCategory>computed</sbdbel:hasCategory>
+        <sbdbel:hasCategory>membership</sbdbel:hasCategory>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#hasComponents"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#hasComponents"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>hasComponents</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#hasComponents"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <owl:annotatedTarget>hasComponents</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#hasComponents"/>
+        <owl:annotatedProperty rdf:resource="https://www.jmillanacosta.com/sbdbel#hasCategory"/>
+        <owl:annotatedTarget>computed</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#hasComponents"/>
+        <owl:annotatedProperty rdf:resource="https://www.jmillanacosta.com/sbdbel#hasCategory"/>
+        <owl:annotatedTarget>membership</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://www.jmillanacosta.com/sbdbel#hasMember -->
+
+    <owl:ObjectProperty rdf:about="https://www.jmillanacosta.com/sbdbel#hasMember">
+        <rdfs:label>hasMember</rdfs:label>
+        <skos:altLabel>hasMember</skos:altLabel>
+        <sbdbel:hasCategory>computed</sbdbel:hasCategory>
+        <sbdbel:hasCategory>membership</sbdbel:hasCategory>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#hasMember"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#hasMember"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>hasMember</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#hasMember"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <owl:annotatedTarget>hasMember</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#hasMember"/>
+        <owl:annotatedProperty rdf:resource="https://www.jmillanacosta.com/sbdbel#hasCategory"/>
+        <owl:annotatedTarget>computed</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#hasMember"/>
+        <owl:annotatedProperty rdf:resource="https://www.jmillanacosta.com/sbdbel#hasCategory"/>
+        <owl:annotatedTarget>membership</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://www.jmillanacosta.com/sbdbel#hasMembers -->
+
+    <owl:ObjectProperty rdf:about="https://www.jmillanacosta.com/sbdbel#hasMembers">
+        <rdfs:label>hasMembers</rdfs:label>
+        <skos:altLabel>hasMembers</skos:altLabel>
+        <sbdbel:hasCategory>computed</sbdbel:hasCategory>
+        <sbdbel:hasCategory>membership</sbdbel:hasCategory>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#hasMembers"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#hasMembers"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>hasMembers</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#hasMembers"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <owl:annotatedTarget>hasMembers</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#hasMembers"/>
+        <owl:annotatedProperty rdf:resource="https://www.jmillanacosta.com/sbdbel#hasCategory"/>
+        <owl:annotatedTarget>computed</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#hasMembers"/>
+        <owl:annotatedProperty rdf:resource="https://www.jmillanacosta.com/sbdbel#hasCategory"/>
+        <owl:annotatedTarget>membership</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://www.jmillanacosta.com/sbdbel#increases -->
+
+    <owl:ObjectProperty rdf:about="https://www.jmillanacosta.com/sbdbel#increases">
+        <rdfs:label>increases</rdfs:label>
+        <skos:altLabel>-&gt;</skos:altLabel>
+        <sbdbel:hasCategory>causal</sbdbel:hasCategory>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#increases"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#increases"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>increases</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#increases"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <owl:annotatedTarget>-&gt;</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#increases"/>
+        <owl:annotatedProperty rdf:resource="https://www.jmillanacosta.com/sbdbel#hasCategory"/>
+        <owl:annotatedTarget>causal</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://www.jmillanacosta.com/sbdbel#isA -->
+
+    <owl:ObjectProperty rdf:about="https://www.jmillanacosta.com/sbdbel#isA">
+        <rdfs:label>isA</rdfs:label>
+        <skos:altLabel>isA</skos:altLabel>
+        <sbdbel:hasCategory>computed</sbdbel:hasCategory>
+        <sbdbel:hasCategory>membership</sbdbel:hasCategory>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#isA"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#isA"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>isA</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#isA"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <owl:annotatedTarget>isA</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#isA"/>
+        <owl:annotatedProperty rdf:resource="https://www.jmillanacosta.com/sbdbel#hasCategory"/>
+        <owl:annotatedTarget>computed</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#isA"/>
+        <owl:annotatedProperty rdf:resource="https://www.jmillanacosta.com/sbdbel#hasCategory"/>
+        <owl:annotatedTarget>membership</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://www.jmillanacosta.com/sbdbel#negativeCorrelation -->
+
+    <owl:ObjectProperty rdf:about="https://www.jmillanacosta.com/sbdbel#negativeCorrelation">
+        <rdfs:label>negativeCorrelation</rdfs:label>
+        <skos:altLabel>neg</skos:altLabel>
+        <sbdbel:hasCategory>correlative</sbdbel:hasCategory>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#negativeCorrelation"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#negativeCorrelation"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>negativeCorrelation</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#negativeCorrelation"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <owl:annotatedTarget>neg</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#negativeCorrelation"/>
+        <owl:annotatedProperty rdf:resource="https://www.jmillanacosta.com/sbdbel#hasCategory"/>
+        <owl:annotatedTarget>correlative</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://www.jmillanacosta.com/sbdbel#noCorrelation -->
+
+    <owl:ObjectProperty rdf:about="https://www.jmillanacosta.com/sbdbel#noCorrelation">
+        <rdfs:label>noCorrelation</rdfs:label>
+        <skos:altLabel>noCorrelation</skos:altLabel>
+        <sbdbel:hasCategory>correlative</sbdbel:hasCategory>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#noCorrelation"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#noCorrelation"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>noCorrelation</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#noCorrelation"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <owl:annotatedTarget>noCorrelation</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#noCorrelation"/>
+        <owl:annotatedProperty rdf:resource="https://www.jmillanacosta.com/sbdbel#hasCategory"/>
+        <owl:annotatedTarget>correlative</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://www.jmillanacosta.com/sbdbel#orthologous -->
+
+    <owl:ObjectProperty rdf:about="https://www.jmillanacosta.com/sbdbel#orthologous">
+        <rdfs:label>orthologous</rdfs:label>
+        <skos:altLabel>orthologous</skos:altLabel>
+        <sbdbel:hasCategory>genomic</sbdbel:hasCategory>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#orthologous"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#orthologous"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>orthologous</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#orthologous"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <owl:annotatedTarget>orthologous</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#orthologous"/>
+        <owl:annotatedProperty rdf:resource="https://www.jmillanacosta.com/sbdbel#hasCategory"/>
+        <owl:annotatedTarget>genomic</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://www.jmillanacosta.com/sbdbel#positiveCorrelation -->
+
+    <owl:ObjectProperty rdf:about="https://www.jmillanacosta.com/sbdbel#positiveCorrelation">
+        <rdfs:label>positiveCorrelation</rdfs:label>
+        <skos:altLabel>pos</skos:altLabel>
+        <sbdbel:hasCategory>correlative</sbdbel:hasCategory>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#positiveCorrelation"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#positiveCorrelation"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>positiveCorrelation</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#positiveCorrelation"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <owl:annotatedTarget>pos</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#positiveCorrelation"/>
+        <owl:annotatedProperty rdf:resource="https://www.jmillanacosta.com/sbdbel#hasCategory"/>
+        <owl:annotatedTarget>correlative</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://www.jmillanacosta.com/sbdbel#prognosticBiomarkerFor -->
+
+    <owl:ObjectProperty rdf:about="https://www.jmillanacosta.com/sbdbel#prognosticBiomarkerFor">
+        <rdfs:label>prognosticBiomarkerFor</rdfs:label>
+        <skos:altLabel>prognosticBiomarkerFor</skos:altLabel>
+        <sbdbel:hasCategory>deprecated</sbdbel:hasCategory>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#prognosticBiomarkerFor"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#prognosticBiomarkerFor"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>prognosticBiomarkerFor</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#prognosticBiomarkerFor"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <owl:annotatedTarget>prognosticBiomarkerFor</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#prognosticBiomarkerFor"/>
+        <owl:annotatedProperty rdf:resource="https://www.jmillanacosta.com/sbdbel#hasCategory"/>
+        <owl:annotatedTarget>deprecated</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://www.jmillanacosta.com/sbdbel#rateLimitingStepOf -->
+
+    <owl:ObjectProperty rdf:about="https://www.jmillanacosta.com/sbdbel#rateLimitingStepOf">
+        <rdfs:label>rateLimitingStepOf</rdfs:label>
+        <skos:altLabel>rateLimitingStepOf</skos:altLabel>
+        <sbdbel:hasCategory>causal</sbdbel:hasCategory>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#rateLimitingStepOf"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#rateLimitingStepOf"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>rateLimitingStepOf</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#rateLimitingStepOf"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <owl:annotatedTarget>rateLimitingStepOf</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#rateLimitingStepOf"/>
+        <owl:annotatedProperty rdf:resource="https://www.jmillanacosta.com/sbdbel#hasCategory"/>
+        <owl:annotatedTarget>causal</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://www.jmillanacosta.com/sbdbel#regulates -->
+
+    <owl:ObjectProperty rdf:about="https://www.jmillanacosta.com/sbdbel#regulates">
+        <rdfs:label>regulates</rdfs:label>
+        <skos:altLabel>reg</skos:altLabel>
+        <sbdbel:hasCategory>causal</sbdbel:hasCategory>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#regulates"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#regulates"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>regulates</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#regulates"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <owl:annotatedTarget>reg</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#regulates"/>
+        <owl:annotatedProperty rdf:resource="https://www.jmillanacosta.com/sbdbel#hasCategory"/>
+        <owl:annotatedTarget>causal</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://www.jmillanacosta.com/sbdbel#subProcessOf -->
+
+    <owl:ObjectProperty rdf:about="https://www.jmillanacosta.com/sbdbel#subProcessOf">
+        <rdfs:label>subProcessOf</rdfs:label>
+        <skos:altLabel>subProcessOf</skos:altLabel>
+        <sbdbel:hasCategory>process</sbdbel:hasCategory>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#subProcessOf"/>
+        <owl:annotatedProperty rdf:resource="https://www.jmillanacosta.com/sbdbel#hasCategory"/>
+        <owl:annotatedTarget>process</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#subProcessOf"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#subProcessOf"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>subProcessOf</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#subProcessOf"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <owl:annotatedTarget>subProcessOf</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://www.jmillanacosta.com/sbdbel#transcribedTo -->
+
+    <owl:ObjectProperty rdf:about="https://www.jmillanacosta.com/sbdbel#transcribedTo">
+        <rdfs:label>transcribedTo</rdfs:label>
+        <skos:altLabel>:&gt;</skos:altLabel>
+        <sbdbel:hasCategory>genomic</sbdbel:hasCategory>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#transcribedTo"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#transcribedTo"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>transcribedTo</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#transcribedTo"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <owl:annotatedTarget>:&gt;</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#transcribedTo"/>
+        <owl:annotatedProperty rdf:resource="https://www.jmillanacosta.com/sbdbel#hasCategory"/>
+        <owl:annotatedTarget>genomic</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://www.jmillanacosta.com/sbdbel#translatedTo -->
+
+    <owl:ObjectProperty rdf:about="https://www.jmillanacosta.com/sbdbel#translatedTo">
+        <rdfs:label>translatedTo</rdfs:label>
+        <skos:altLabel>&gt;&gt;</skos:altLabel>
+        <sbdbel:hasCategory>genomic</sbdbel:hasCategory>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#translatedTo"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#translatedTo"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <owl:annotatedTarget>translatedTo</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#translatedTo"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <owl:annotatedTarget>&gt;&gt;</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://www.jmillanacosta.com/sbdbel#translatedTo"/>
+        <owl:annotatedProperty rdf:resource="https://www.jmillanacosta.com/sbdbel#hasCategory"/>
+        <owl:annotatedTarget>genomic</owl:annotatedTarget>
+        <prov:wasDerivedFrom rdf:resource="http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl"/>
+    </owl:Axiom>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26) https://github.com/owlcs/owlapi -->
+
