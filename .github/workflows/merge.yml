@@ -25,9 +25,10 @@ jobs:
         wget https://github.com/ontodev/robot/releases/download/v1.9.5/robot.jar
         sh robot merge --input src/ontology/sbdbel-core.owl \
           annotate \
-            --ontology-iri www.jmillanacosta.com/sbdbel/src/ontology/sbdbel.ttl \
+            --ontology-iri www.jmillanacosta.com/sbdbel/src/ontology/sbdbel.owl \
             --annotation dc:title "Safe by Design Biological Expression Language" \
-            --annotation dc:description "SBDBEL provides classes and properties used to model the biological relationships relevant to safe by design assessments." \
+            --annotation dcterms:description "SBDBEL provides classes and properties used to model the biological relationships relevant to safe by design assessments." \
+            --annotation dcterms:license "CC0"
           --annotate-derived-from true \
           --output src/ontology/sbdbel.owl
         rm robot*
