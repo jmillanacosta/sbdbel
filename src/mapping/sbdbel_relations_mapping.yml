@@ -8,44 +8,17 @@ prefixes:
 authors:
  - name: Javier Millan Acosta
 mappings:
-  #functions: # Map BEL functions
-  #  sources:
-  #    - ['data.json~jsonpath', '$.functions.info[*]']
-  #  s: sbdbel:$(name) #Works well
-  #  po:
-  #    - [a, owl:Class]
-  #    - [rdfs:about, sbdbel:$(name)]
-  #    - [rdfs:label, $(name)]
-  #    - [skos:altLabel, $(abbreviation)]
-  #    - [rdfs:subClassOf, sbdbel:$(categories)] # TODO Need to define categories as subclasses of function
-  #ProteinModification:
-  #  sources:
-  #    - ['data.json~jsonpath', '$.namespaces.ProteinModification.info[*]'] # Iterate on Protein modifications
-  #  s: sbdbel:$(name)
-  #  po:
-  #    - [a, owl:Class]  
-  #    - [rdfs:subClassOf, sbdbel:ProteinModification]
-  #    - [skos:altLabel, $(abbreviation)]
-  #AminoAcid:
-  #  sources:
-  #    - ['data.json~jsonpath', '$.namespaces.AminoAcid.info[*]'] # Iterate on Protein modifications
-  #  s: sbdbel:$(name)
-  #  po:
-  #    - [a, owl:Class]  
-  #    - [rdfs:subClassOf, sbdbel:AminoAcid]
-  #    - [skos:altLabel, $(abbrev1)]
-  #    - [skos:altLabel, $(abbreviation)]
-  #    - [rdfs:label, $(name)]
   relations:
     sources:
       - ['data.json~jsonpath', '$.relations.info[*]']
     s: sbdbel:$(name)
     po:
-      - [a, owl:Class]
-      - [rdfs:subClassOf sbdbel:bel_relation]
+      - [a, owl:ObjectProperty]
       - [sbdbel:hasCategory, $(categories)]
       - [skos:altLabel, $(abbreviation)]
       - [rdfs:label, $(name)]
       - [rdfs:about sbdbel:#relations#$(name)]
+      - [rdfs:domain sbdbel:placeholder]
+      - [rdfs:range sbdbel:placeholder]
       
       
