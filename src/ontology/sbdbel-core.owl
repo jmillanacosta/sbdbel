@@ -14,7 +14,7 @@
 @prefix void: <http://rdfs.org/ns/void#> .
 
 <http://www.jmillanacosta.com/sbdbel/src/ontology/sbdbel-core.owl#> a owl:Ontology ;
-    owl:imports <http://www.jmillanacosta.com/sbdbel/src/ontology/sbdbel_relations.owl> ;
+    owl:imports <http://www.jmillanacosta.com/sbdbel/src/ontology/sbdbel_relations.ttl> ;
     owl:versionInfo "0.1" ;
     owl:versionIRI <http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl> ;
     dc:contributor [
