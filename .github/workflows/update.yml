@@ -48,7 +48,7 @@ jobs:
       run: |
        wget https://github.com/ontodev/robot/raw/master/bin/robot
        wget https://github.com/ontodev/robot/releases/download/v1.9.5/robot.jar
-       robot merge --input src/ontology/sbd-core.owl \
+       sh robot merge --input src/ontology/sbd-core.owl \
         annotate 
           --ontology-iri www.jmillanacosta.com/sbdbel/src/ontology/sbdbel.owl \
           --annotation dc:title "Safe by Design Biological Expression Language"
