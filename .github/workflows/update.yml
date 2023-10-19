@@ -55,6 +55,7 @@ jobs:
           --annotation dc:description "SBDBEL provides classes and properties used to model the biological relationships relevant to safe by design assessments." .
         --annotate-derived-from true \ 
         --output src/ontology/sbdbel.owl
+       rm robot*
     - name: Commit files
       if: always()
       run: |
