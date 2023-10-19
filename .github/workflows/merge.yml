@@ -2,27 +2,46 @@ name: Merge SBDBEL
 on:
   workflow_dispatch:
   workflow_run:
-    workflows: ["pages-build-deployment"]
+    workflows: ["Update SBDBEL"]
     types:
       - completed
+
 jobs:
   merge:
     runs-on: ubuntu-latest
     steps:
     - name: Check out repository
       uses: actions/checkout@v4
+
+    - name: Start a loop to check file differences
+      id: check-differences
+      run: |
+        # Set a timer for 5 minutes
+        for _ in {1..5}; do
+          # Check if files are different
+          if ! diff src/ontology/sbdbel_relations.ttl <(wget -qO- https://www.jmillanacosta.com/sbdbel/src/ontology/sbdbel_relations.ttl); then
+            echo "Files are different. Continuing to monitor..."
+          else
+            echo "Files are the same. Exiting."
+            exit 0
+          fi
+          sleep 60  # Wait for 1 minute
+        done
+      continue-on-error: true
+
     - name: Merge modules
       run: |
-       wget https://github.com/ontodev/robot/raw/master/bin/robot
-       wget https://github.com/ontodev/robot/releases/download/v1.9.5/robot.jar
-       sh robot merge --input src/ontology/sbdbel-core.owl \
-        annotate 
-          --ontology-iri www.jmillanacosta.com/sbdbel/src/ontology/sbdbel.owl \
-          --annotation dc:title "Safe by Design Biological Expression Language"
-          --annotation dc:description "SBDBEL provides classes and properties used to model the biological relationships relevant to safe by design assessments." .
-        --annotate-derived-from true \ 
-        --output src/ontology/sbdbel.owl
-       rm robot*
+        wget https://github.com/ontodev/robot/raw/master/bin/robot
+        wget https://github.com/ontodev/robot/releases/download/v1.9.5/robot.jar
+        sh robot merge --input src/ontology/sbdbel-core.owl \
+          annotate \
+            --ontology-iri www.jmillanacosta.com/sbdbel/src/ontology/sbdbel.ttl \
+            --annotation dc:title "Safe by Design Biological Expression Language" \
+            --annotation dc:description "SBDBEL provides classes and properties used to model the biological relationships relevant to safe by design assessments." . \
+          --annotate-derived-from true \
+          --output src/ontology/sbdbel.owl
+        rm robot*
+
     - name: Commit files
       if: always()
       run: |
@@ -34,9 +53,9 @@ jobs:
         if git diff-index --quiet HEAD --; then
           echo "No changes to commit."
         else
-            git commit -m "Actions - merge" src/ontology/* || true
-          fi
-        
+          git commit -m "Actions - merge" src/ontology/* || true
+        fi
+
         # Check if there are changes to push
         if [[ $(git rev-parse --abbrev-ref HEAD) == "master" ]]; then
           if [ -n "$(git cherry -v)" ]; then
