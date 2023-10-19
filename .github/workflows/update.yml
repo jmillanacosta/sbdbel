@@ -20,14 +20,14 @@ jobs:
       if: always()
       run: |
         git pull
-        git add *
+        git add src/ontology/*
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         # Check if there are changes to commit
         if git diff-index --quiet HEAD --; then
           echo "No changes to commit."
         else
-            git commit -m "Actions - OWL updated" . || true
+            git commit -m "Actions - build-slims" src/ontology/* || true
           fi
         
         # Check if there are changes to push
@@ -48,7 +48,7 @@ jobs:
       run: |
        wget https://github.com/ontodev/robot/raw/master/bin/robot
        wget https://github.com/ontodev/robot/releases/download/v1.9.5/robot.jar
-       sh robot merge --input src/ontology/sbd-core.owl \
+       sh robot merge --input src/ontology/sbdbel-core.owl \
         annotate 
           --ontology-iri www.jmillanacosta.com/sbdbel/src/ontology/sbdbel.owl \
           --annotation dc:title "Safe by Design Biological Expression Language"
@@ -60,14 +60,14 @@ jobs:
       if: always()
       run: |
         git pull
-        git add *
+        git add src/ontology/*
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         # Check if there are changes to commit
         if git diff-index --quiet HEAD --; then
           echo "No changes to commit."
         else
-            git commit -m "Actions - OWL updated" . || true
+            git commit -m "Actions - merge" src/ontology/* || true
           fi
         
         # Check if there are changes to push
