@@ -8,7 +8,6 @@ on:
 jobs:
   merge:
     runs-on: ubuntu-latest
-    needs: build-slims
     steps:
     - name: Check out repository
       uses: actions/checkout@v4
