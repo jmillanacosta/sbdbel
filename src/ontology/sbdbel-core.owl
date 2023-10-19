@@ -1,0 +1,26 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix sbdbel: <https://www.jmillanacosta.com/sbdbel#> .
+@prefix d2rq: <http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fnml: <http://semweb.mmlab.be/ns/fnml#> .
+@prefix fno: <https://w3id.org/function/ontology#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://www.jmillanacosta.com/sbdbel/src/ontology/sbdbel-core.owl#> a owl:Ontology ;
+    owl:imports <http://www.jmillanacosta.com/sbdbel/src/ontology/sbdbel_relations.owl> ;
+    owl:versionInfo "0.1" ;
+    owl:versionIRI <http://www.jmillanacosta.com/sbdbel/releases/0.1/sbdbel-core.owl> ;
+    dc:contributor [
+        a foaf:Person ;
+        foaf:name "Javier Millan Acosta" ;
+        foaf:holdsAccount <http://orcid.org/0000-0002-4166-7093> ;
+    ] ;
+    dc:title "Safe by Design Biological Expression Language" ;
+    dc:description "This is the core version of sbdbel, an ontology with the classes and properties used to model the biological relationships relevant to safe by design assessments." .
