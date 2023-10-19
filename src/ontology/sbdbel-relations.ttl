@@ -14,122 +14,122 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 
-sbdbel:analogous a owl:Class;
+sbdbel:analogous a owl:ObjectProperty;
   rdfs:label "analogous";
   skos:altLabel "analogous";
   sbdbel:hasCategory "deprecated" .
 
-sbdbel:association a owl:Class;
+sbdbel:association a owl:ObjectProperty;
   rdfs:label "association";
   skos:altLabel "--";
   sbdbel:hasCategory "correlative" .
 
-sbdbel:biomarkerFor a owl:Class;
+sbdbel:biomarkerFor a owl:ObjectProperty;
   rdfs:label "biomarkerFor";
   skos:altLabel "biomarkerFor";
   sbdbel:hasCategory "deprecated" .
 
-sbdbel:causesNoChange a owl:Class;
+sbdbel:causesNoChange a owl:ObjectProperty;
   rdfs:label "causesNoChange";
   skos:altLabel "cnc";
   sbdbel:hasCategory "causal" .
 
-sbdbel:decreases a owl:Class;
+sbdbel:decreases a owl:ObjectProperty;
   rdfs:label "decreases";
   skos:altLabel "-|";
   sbdbel:hasCategory "causal" .
 
-sbdbel:directlyDecreases a owl:Class;
+sbdbel:directlyDecreases a owl:ObjectProperty;
   rdfs:label "directlyDecreases";
   skos:altLabel "=|";
   sbdbel:hasCategory "causal", "direct" .
 
-sbdbel:directlyIncreases a owl:Class;
+sbdbel:directlyIncreases a owl:ObjectProperty;
   rdfs:label "directlyIncreases";
   skos:altLabel "=>";
   sbdbel:hasCategory "causal", "direct" .
 
-sbdbel:equivalentTo a owl:Class;
+sbdbel:equivalentTo a owl:ObjectProperty;
   rdfs:label "equivalentTo";
   skos:altLabel "eq";
   sbdbel:hasCategory "equivalence", "membership" .
 
-sbdbel:hasComponent a owl:Class;
+sbdbel:hasComponent a owl:ObjectProperty;
   rdfs:label "hasComponent";
   skos:altLabel "hasComponent";
   sbdbel:hasCategory "computed", "membership" .
 
-sbdbel:hasComponents a owl:Class;
+sbdbel:hasComponents a owl:ObjectProperty;
   rdfs:label "hasComponents";
   skos:altLabel "hasComponents";
   sbdbel:hasCategory "computed", "membership" .
 
-sbdbel:hasMember a owl:Class;
+sbdbel:hasMember a owl:ObjectProperty;
   rdfs:label "hasMember";
   skos:altLabel "hasMember";
   sbdbel:hasCategory "computed", "membership" .
 
-sbdbel:hasMembers a owl:Class;
+sbdbel:hasMembers a owl:ObjectProperty;
   rdfs:label "hasMembers";
   skos:altLabel "hasMembers";
   sbdbel:hasCategory "computed", "membership" .
 
-sbdbel:increases a owl:Class;
+sbdbel:increases a owl:ObjectProperty;
   rdfs:label "increases";
   skos:altLabel "->";
   sbdbel:hasCategory "causal" .
 
-sbdbel:isA a owl:Class;
+sbdbel:isA a owl:ObjectProperty;
   rdfs:label "isA";
   skos:altLabel "isA";
   sbdbel:hasCategory "computed", "membership" .
 
-sbdbel:negativeCorrelation a owl:Class;
+sbdbel:negativeCorrelation a owl:ObjectProperty;
   rdfs:label "negativeCorrelation";
   skos:altLabel "neg";
   sbdbel:hasCategory "correlative" .
 
-sbdbel:noCorrelation a owl:Class;
+sbdbel:noCorrelation a owl:ObjectProperty;
   rdfs:label "noCorrelation";
   skos:altLabel "noCorrelation";
   sbdbel:hasCategory "correlative" .
 
-sbdbel:orthologous a owl:Class;
+sbdbel:orthologous a owl:ObjectProperty;
   rdfs:label "orthologous";
   skos:altLabel "orthologous";
   sbdbel:hasCategory "genomic" .
 
-sbdbel:positiveCorrelation a owl:Class;
+sbdbel:positiveCorrelation a owl:ObjectProperty;
   rdfs:label "positiveCorrelation";
   skos:altLabel "pos";
   sbdbel:hasCategory "correlative" .
 
-sbdbel:prognosticBiomarkerFor a owl:Class;
+sbdbel:prognosticBiomarkerFor a owl:ObjectProperty;
   rdfs:label "prognosticBiomarkerFor";
   skos:altLabel "prognosticBiomarkerFor";
   sbdbel:hasCategory "deprecated" .
 
-sbdbel:rateLimitingStepOf a owl:Class;
+sbdbel:rateLimitingStepOf a owl:ObjectProperty;
   rdfs:label "rateLimitingStepOf";
   skos:altLabel "rateLimitingStepOf";
   sbdbel:hasCategory "causal" .
 
-sbdbel:regulates a owl:Class;
+sbdbel:regulates a owl:ObjectProperty;
   rdfs:label "regulates";
   skos:altLabel "reg";
   sbdbel:hasCategory "causal" .
 
-sbdbel:subProcessOf a owl:Class;
+sbdbel:subProcessOf a owl:ObjectProperty;
   rdfs:label "subProcessOf";
   skos:altLabel "subProcessOf";
   sbdbel:hasCategory "process" .
 
-sbdbel:transcribedTo a owl:Class;
+sbdbel:transcribedTo a owl:ObjectProperty;
   rdfs:label "transcribedTo";
   skos:altLabel ":>";
   sbdbel:hasCategory "genomic" .
 
-sbdbel:translatedTo a owl:Class;
+sbdbel:translatedTo a owl:ObjectProperty;
   rdfs:label "translatedTo";
   skos:altLabel ">>";
   sbdbel:hasCategory "genomic" .
