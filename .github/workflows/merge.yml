@@ -17,17 +17,7 @@ jobs:
       id: check-differences
       run: |
         # Set a timer for 5 minutes
-        for _ in {1..5}; do
-          # Check if files are different
-          if ! diff src/ontology/sbdbel_relations.ttl <(wget -qO- https://www.jmillanacosta.com/sbdbel/src/ontology/sbdbel_relations.ttl); then
-            echo "Files are different. Continuing to monitor..."
-          else
-            echo "Files are the same. Exiting."
-            exit 0
-          fi
-          sleep 60  # Wait for 1 minute
-        done
-      continue-on-error: true
+        sleep 300  # Wait for 5 minutes for pages to be deployed
 
     - name: Merge modules
       run: |
