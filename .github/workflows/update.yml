@@ -1,0 +1,40 @@
+name: Build slims
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+     - 'src/mapping/*.yml'
+  push:
+    paths:
+     - 'src/mapping/*.yml'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v4
+    - name: Update sbdbel according to mapping rules
+      run: bash src/scripts/extract_relations.sh
+  # Commit and push
+    - name: Commit files
+      if: always()
+      run: |
+        git pull
+        git add *
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        # Check if there are changes to commit
+        if git diff-index --quiet HEAD --; then
+          echo "No changes to commit."
+        else
+            git commit -m "Actions - OWL updated" . || true
+          fi
+        
+        # Check if there are changes to push
+        if [[ $(git rev-parse --abbrev-ref HEAD) == "master" ]]; then
+          if [ -n "$(git cherry -v)" ]; then
+            git push || echo "Push failed."
+          else
+            echo "No changes to push."
+          fi
+        fi
