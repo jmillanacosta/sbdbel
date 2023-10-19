@@ -13,8 +13,6 @@ jobs:
     steps:
     - name: Check out repository
       uses: actions/checkout@v4
-      with:
-       token: ${{ secrets.PAT }} 
     - name: Update sbdbel according to mapping rules
       run: bash src/scripts/extract_relations_bel.sh
   # Commit and push
