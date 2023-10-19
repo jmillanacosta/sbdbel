@@ -12,8 +12,6 @@ jobs:
     steps:
     - name: Check out repository
       uses: actions/checkout@v4
-      with:
-       token: ${{ secrets.PAT }} 
     - name: Merge modules
       run: |
        wget https://github.com/ontodev/robot/raw/master/bin/robot
