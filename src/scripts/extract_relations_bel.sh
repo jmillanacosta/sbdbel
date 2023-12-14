@@ -2,10 +2,10 @@
 
 # Author: Javier Millan Acosta
 # Description: This Bash script automates the process of retrieving the BEL (Biological Expression Language) specification
-#              and converting its relations to OWL (Web Ontology Language) object properties using YARRRML mapping files.
-#              The script uses YARRRML to convert the mapping files to RML (RDF Mapping Language) and RML Mapper
-#              to generate RDF triples. The resulting RDF triples are then saved in Turtle format.
-#              Finally, the script performs clean-up by removing temporary files.
+# and converting its relations to OWL (Web Ontology Language) object properties using YARRRML mapping files.
+# The script uses YARRRML to convert the mapping files to RML (RDF Mapping Language) and RML Mapper
+# to generate RDF triples. The resulting RDF triples are then saved in Turtle format.
+# Finally, the script performs clean-up by removing temporary files.
 # Date: October 19, 2023
 
 # Step 1: Create a directory for temporary files
